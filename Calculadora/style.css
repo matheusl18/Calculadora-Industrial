@@ -24,6 +24,17 @@
     text-align: center;
     width: 97.4%;
     height: 50px;
+    margin-bottom: 70px;
+}
+
+.resultados{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 550px;
+    margin-bottom: 5px;
+}
+.resultados input{
+    margin-right: 550px;
 }
 
 @media screen and (max-width: 700px) {
@@ -40,5 +51,11 @@
         margin-left: 20px;
         width: 91.5%;
         height: 50px;
+    }
+    .resultados{
+        margin-left: 100px;
+    }
+    .resultados input{
+        margin-right: 70px;
     }
 }
