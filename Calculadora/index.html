@@ -10,19 +10,19 @@
 </head>
 <body>
     <div>
-        <span>Informações da Embalagem</span>
+        <span>Dados da Embalagem</span>
         <div class="flex">
             <div class="opção">
                 <label>Altura(cm)</label>
-                <input type="text" id="altura" placeholder="Insira a Altura">
+                <input type="number" id="altura" placeholder="Insira a Altura" min="4" max="10">
             </div>
             <div class="opção">
                 <label>Largura (cm)</label>
-                <input type="text" id="largura" placeholder="Insira a Largura">
+                <input type="number" id="largura" placeholder="Insira a Largura">
             </div>
             <div class="opção">
                 <label>Espessura (micras)</label>
-                <input type="text" id="espessura" placeholder="Insira a Espessura">
+                <input type="number" id="espessura" placeholder="Insira a Espessura">
             </div>
         </div>
         <div class="flex">
@@ -36,6 +36,7 @@
             <div class="opção">
                 <label>Quantas Cores?</label>
                 <select id="cores">
+                    <option>0</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -47,27 +48,27 @@
             <div class="opção">
                 <label>Tipo do Material<label>
                 <select id="material">
-                    <option>PEBD-0.92</option>
-                    <option>PEAD-0.95</option>
-                    <option>PP-0.90</option>
-                    <option>BOPP TRANSP-0.91</option>
-                    <option>BOPP PEROLA-0.70</option>
-                    <option>NYLON-1.0</option>
+                    <option>PEBD</option>
+                    <option>PEAD</option>
+                    <option>PP</option>
+                    <option>BOPP TRANSP</option>
+                    <option>BOPP PEROLA</option>
+                    <option>NYLON</option>
                 </select>
             </div>
         </div>
-        
+       
         <button id="calcular">CALCULAR</button>
-        <div class="resultados">
+        <!--<div class="resultados">
             <label>Peso Mil:</label>
             <input type="text" id="pesomil">
         </div>
         <div class="resultados">
             <label>Peso Total:</label>
             <input type="text" id="pesototal">
-        </div>
+        </div>-->
         <div class="resultados">
-            <label>Retorno do Calculo:</label>
+            <label>Quantidade(min):</label>
             <input type="text" id="resultados">
         </div>
     </div>
