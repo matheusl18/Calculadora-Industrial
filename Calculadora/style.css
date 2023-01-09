@@ -9,7 +9,7 @@
     flex-direction: column;
     width: 33%;
 }
-.opção input[type="text"]{
+.opção input[type="number"]{
     width: 90%;
     height: 30px;
 }
