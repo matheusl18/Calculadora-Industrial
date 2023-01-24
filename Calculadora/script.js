@@ -54,10 +54,10 @@ btn.addEventListener('click', () => {
     }
     var pesoMil = largura*altura*espessura*fator*materialValor;
     var pesoTotal = pesoMil*quantidade;
-    if (pesoTotal < 100 && modelo == 1 || pesoTotal < 100 && modelo == 0 && cores <= 4){
+    if (pesoTotal < 100 && modelo == 1 || pesoTotal < 100 && modelo == 0 && cores <= 4 && materialOption != "NYLON"){
         alert("Peso total não atingiu o minimo de 100 kg");
         resultados.value = 0;
-    } else if(pesoTotal > 100 && modelo == 1 || pesoTotal > 100 && modelo == 0 && cores <= 4){
+    } else if(pesoTotal > 100 && modelo == 1 || pesoTotal > 100 && modelo == 0 && cores <= 4 && materialOption != "NYLON"){
         var qtdmin = 100/pesoMil;
         resultados.value = parseFloat(qtdmin).toFixed(3);
     } else if(pesoTotal < 300 && modelo == 0 && cores <= 6){
