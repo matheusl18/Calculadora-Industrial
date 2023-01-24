@@ -9,20 +9,20 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div>
+    <div id="calculadora">
         <span>Dados da Embalagem</span>
         <div class="flex">
             <div class="opção">
                 <label>Altura(cm)</label>
-                <input type="number" id="altura" placeholder="Insira a Altura" min="4" max="10">
+                <input type="number" id="altura" placeholder="Insira a Altura" step="0.01" min="4.00">
             </div>
             <div class="opção">
                 <label>Largura (cm)</label>
-                <input type="number" id="largura" placeholder="Insira a Largura">
+                <input type="number" id="largura" placeholder="Insira a Largura" step="0.01" min="4.00">
             </div>
             <div class="opção">
                 <label>Espessura (micras)</label>
-                <input type="number" id="espessura" placeholder="Insira a Espessura">
+                <input type="number" id="espessura" placeholder="Insira a Espessura" step="0.001">
             </div>
         </div>
         <div class="flex">
@@ -58,14 +58,6 @@
         </div>
        
         <button id="calcular">CALCULAR</button>
-        <!--<div class="resultados">
-            <label>Peso Mil:</label>
-            <input type="text" id="pesomil">
-        </div>
-        <div class="resultados">
-            <label>Peso Total:</label>
-            <input type="text" id="pesototal">
-        </div>-->
         <div class="resultados">
             <label>Quantidade Mínima (mil):</label>
             <input type="text" id="resultados">
