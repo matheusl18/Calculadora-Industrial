@@ -16,7 +16,7 @@ inputs.forEach(input => {
                 alert(`O valor minimo da ${input.id} é 4`)
                 this.value = 4;
             }
-            this.value = parseFloat(this.value).toFixed(2);
+            this.value = parseFloat(this.value).toFixed(1);
         });
     };
 });
